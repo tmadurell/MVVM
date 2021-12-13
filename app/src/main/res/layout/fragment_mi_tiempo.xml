@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#423D3D"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/capitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="#FFFFFF"
+        android:hint="Cuantos Capitulos-Episodios veras en total?"/>
+
+    <EditText
+        android:id="@+id/duracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="#FFFFFF"
+        android:hint="Cuanto dura un Capitulo de Media? (en Minutos)"/>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular tiempo"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+        <ProgressBar
+            android:id="@+id/calculando"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:adjustViewBounds="false"
+        android:src="@drawable/reloj" />
+</LinearLayout>
